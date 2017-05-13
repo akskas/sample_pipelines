@@ -71,14 +71,6 @@ jobs:
       - flag-9
       - flag-10
  
-  - name: manifest-7
-    type: manifest
-    steps:
-      - IN: manifest-6
-    flags:
-      - flag-10
-      - flag-11
- 
   - name: manifest-10
     type: manifest
     steps:
