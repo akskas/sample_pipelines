@@ -10,7 +10,7 @@ jobs:
   - name: manifest-2
     type: manifest
     steps:
-      - IN: manifest-1
+      - IN: nginx-image
     flags:
       - flag-2
       - flag-3
@@ -18,7 +18,7 @@ jobs:
   - name: manifest-3
     type: manifest
     steps:
-      - IN: manifest-2
+      - IN: nginx-image
     flags:
       - flag-3
       - flag-4
@@ -26,7 +26,7 @@ jobs:
   - name: manifest-4
     type: manifest
     steps:
-      - IN: manifest-3
+      - IN: nginx-image
     flags:
       - flag-4
       - flag-5
@@ -34,7 +34,7 @@ jobs:
   - name: manifest-5
     type: manifest
     steps:
-      - IN: manifest-4
+      - IN: nginx-image
     flags:
       - flag-5
       - flag-6
@@ -42,7 +42,7 @@ jobs:
   - name: manifest-6
     type: manifest
     steps:
-      - IN: manifest-5
+      - IN: nginx-image
     flags:
       - flag-6
       - flag-7
@@ -50,7 +50,7 @@ jobs:
   - name: manifest-7
     type: manifest
     steps:
-      - IN: manifest-6
+      - IN: nginx-image
     flags:
       - flag-7
       - flag-8
@@ -58,7 +58,7 @@ jobs:
   - name: manifest-8
     type: manifest
     steps:
-      - IN: manifest-7
+      - IN: nginx-image
     flags:
       - flag-8
       - flag-9
@@ -74,7 +74,7 @@ jobs:
   - name: manifest-10
     type: manifest
     steps:
-      - IN: manifest-9
+      - IN: nginx-image
     flags:
       - flag-11
       - flag-12
@@ -82,7 +82,7 @@ jobs:
   - name: manifest-11
     type: manifest
     steps:
-      - IN: manifest-10 
+      - IN: nginx-image
     flags:
       - flag-12
       - flag-13
@@ -90,7 +90,17 @@ jobs:
   - name: project_A_runCI
     type: runCI
     steps:
+      - IN: manifest-1
+      - IN: manifest-2
+      - IN: manifest-3
+      - IN: manifest-4
+      - IN: manifest-5
+      - IN: manifest-6  
+      - IN: manifest-7
+      - IN: manifest-8
+      - IN: manifest-9 
       - IN: manifest-10
+      - IN: manifest-11     
     flags:
       - flag-13
       - flag-14
