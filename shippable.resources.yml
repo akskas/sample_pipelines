@@ -1,15 +1,7 @@
 resources:
-  - name: ozan_pay_img
-    type: image
-    integration: "docker-subint"
-    pointer:
-      sourceName: "library/nginx"
-    seed:
-      versionName: latest
-
-  - name: ozan-pay_gitrepo
+  - name: mammoth_task
     type: gitRepo
     integration: github-subint
     pointer:
-      sourceName: ankul-shippable/testprivate
+      sourceName: akskas/mammothTask
       branch: "master"
