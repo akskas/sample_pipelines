@@ -1,17 +1,7 @@
 jobs:
-  - name: nginx-manifest
-    type: manifest
-    steps:
-      - IN: nginx-image
-#      - IN: testprivate
-#      - IN: sample_java_runCI
-
-  - name: sample-runSh
+  - name: runSh
     type: runSh
     steps:
-      - IN: ozan_pay_img
+      - IN: mammoth_task
       - TASK:
-        - script: echo OZAN_PAY_GITREPO_PATH
         - script: printenv
-    flags:
-      - runSh 
