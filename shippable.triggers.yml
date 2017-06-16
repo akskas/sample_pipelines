@@ -1,5 +1,5 @@
 triggers:
-   - name: trigger-trace_copy
+   - name: manifest_trigger
      type: trigger
      version:
        counter: 1
