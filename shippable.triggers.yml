@@ -1,5 +1,5 @@
 triggers:
-   - name: manifest_trigger
+   - name: manifest_2_trigger
      type: trigger
      version:
        counter: 1
