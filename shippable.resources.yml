@@ -1,5 +1,5 @@
 resources:
-  - name: manifest_nginx-image
+  - name: manifest_2_nginx-image
     type: image
     integration: "docker-subint"
     pointer:
