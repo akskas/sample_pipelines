@@ -1,8 +1,8 @@
 jobs:  
-  - name: manifest
+  - name: manifest_2
     type: manifest
     steps:
-      - IN: manifest_nginx-image
+      - IN: manifest_2_nginx-image
     flags:
       - flag-1
       - flag-2
